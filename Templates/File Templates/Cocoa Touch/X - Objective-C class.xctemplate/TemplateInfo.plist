@@ -33,8 +33,17 @@
 			<key>Values</key>
 			<array>
 				<string>NSObject</string>
-                <string>Singleton</string>
 			</array>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>false</string>
+			<key>Identifier</key>
+			<string>Singleton</string>
+			<key>Name</key>
+			<string>Singleton</string>
+			<key>Type</key>
+			<string>checkbox</string>
 		</dict>
 	</array>
 	<key>Platforms</key>
