@@ -45,11 +45,4 @@
     
 }
 
-#pragma mark - Memory management
-
-- (void)dealloc {
-    [_myContentView release];
-    [super dealloc];
-}
-
 @end
