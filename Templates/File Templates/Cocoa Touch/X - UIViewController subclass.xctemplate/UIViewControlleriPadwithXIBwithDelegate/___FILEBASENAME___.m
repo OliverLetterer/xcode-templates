@@ -10,7 +10,6 @@
 
 
 @implementation ___FILEBASENAMEASIDENTIFIER___
-
 @synthesize delegate=_delegate;
 
 #pragma mark - setters and getters
@@ -32,11 +31,6 @@
 }
 
 #pragma mark - Memory management
-
-- (void)dealloc {
-    
-    [super dealloc];
-}
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.

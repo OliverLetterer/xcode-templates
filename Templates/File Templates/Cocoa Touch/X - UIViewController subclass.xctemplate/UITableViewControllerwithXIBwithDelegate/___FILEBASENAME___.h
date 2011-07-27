@@ -18,9 +18,9 @@
 
 @interface ___FILEBASENAMEASIDENTIFIER___ : UITableViewController {
 @private
-    id<___FILEBASENAMEASIDENTIFIER___Delegate> _delegate;
+    id<___FILEBASENAMEASIDENTIFIER___Delegate> __weak _delegate;
 }
 
-@property (nonatomic, assign) id<___FILEBASENAMEASIDENTIFIER___Delegate> delegate;
+@property (nonatomic, weak) id<___FILEBASENAMEASIDENTIFIER___Delegate> delegate;
 
 @end
