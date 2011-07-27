@@ -1,0 +1,26 @@
+//
+//  ___FILENAME___
+//  ___PROJECTNAME___
+//
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@class ___FILEBASENAMEASIDENTIFIER___;
+
+@protocol ___FILEBASENAMEASIDENTIFIER___Delegate <NSObject>
+
+@end
+
+
+
+@interface ___FILEBASENAMEASIDENTIFIER___ : UITableViewController {
+@private
+    id<___FILEBASENAMEASIDENTIFIER___Delegate> _delegate;
+}
+
+@property (nonatomic, assign) id<___FILEBASENAMEASIDENTIFIER___Delegate> delegate;
+
+@end
