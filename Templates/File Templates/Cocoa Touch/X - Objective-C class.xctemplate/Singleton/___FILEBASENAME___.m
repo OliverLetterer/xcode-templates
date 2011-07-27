@@ -21,13 +21,6 @@
     return self;
 }
 
-#pragma mark - Memory management
-
-- (void)dealloc {
-    
-    [super dealloc];
-}
-
 @end
 
 
@@ -36,11 +29,11 @@
 
 #pragma mark - Singleton implementation
 
-static ___FILEBASENAMEASIDENTIFIER___ *_instance = nil;
-
 @implementation ___FILEBASENAMEASIDENTIFIER___ (Singleton)
 
 + (___FILEBASENAMEASIDENTIFIER___ *)sharedInstance {
+    static ___FILEBASENAMEASIDENTIFIER___ *_instance = nil;
+    
 	static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _instance = [[super allocWithZone:NULL] init];
@@ -49,27 +42,11 @@ static ___FILEBASENAMEASIDENTIFIER___ *_instance = nil;
 }
 
 + (id)allocWithZone:(NSZone *)zone {	
-	return [[self sharedInstance] retain];	
+	return [self sharedInstance];	
 }
 
 
 - (id)copyWithZone:(NSZone *)zone {
-    return self;	
-}
-
-- (id)retain {	
-    return self;	
-}
-
-- (NSUInteger)retainCount {
-    return NSUIntegerMax;
-}
-
-- (void)release {
-    //do nothing
-}
-
-- (id)autorelease {
     return self;	
 }
 
