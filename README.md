@@ -1,6 +1,6 @@
 XCode-Templates
 =============
-Set of XCode 4 Templates for iOS
+Set of ARC compatible XCode 4 Templates for iOS.
 
 Installation
 =============
